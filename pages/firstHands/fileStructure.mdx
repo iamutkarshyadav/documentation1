@@ -1,0 +1,90 @@
+---
+title: File Structure and Naming Conventions
+---
+
+# File Structure and Naming Conventions
+
+In the PUBG PC Clone project, we adhere to standard conventions for organizing files and naming variables to ensure consistency, readability, and maintainability of the codebase.
+
+# Project Directory Structure
+
+- **/Content**
+  - **/Data**: Contains data files such as JSON or CSV for defining game parameters, configurations, or level data.
+  - **/Blueprints**: Houses Blueprint scripts for defining gameplay mechanics, AI behavior, and user interfaces.
+  - **/Items**: Stores assets and Blueprints related to in-game items, weapons, equipment, and power-ups.
+  - **/Animations**: Contains animation assets and Blueprints for character animations, transitions, and blends.
+  - **/UI**: Stores user interface assets, widgets, and Blueprints for HUD elements, menus, and in-game overlays.
+  - **/Materials**: Houses material assets for defining surface properties, textures, shaders, and special effects.
+  - **/Maps**: Contains level maps and associated assets for different game levels or environments.
+  - **/Sounds**: Stores audio files, sound cues, and Blueprints for sound effects, music, and ambient sounds.
+  - **/Textures**: Contains texture assets for 2D and 3D objects, including diffuse, normal, and specular maps.
+- **/Config**: Stores configuration files for various aspects of the game, such as input mappings, game settings, and localization settings.
+- **/Source**: Contains source code files written in C++ for custom gameplay logic, networking functionality, and performance optimizations.
+
+
+## Naming Conventions
+
+### Camel Case
+
+We use camel case naming convention for variables, functions, and file names throughout the project. This convention entails capitalizing the first letter of each word in the name except for the first word, with no spaces or punctuation between words. For example:
+
+- **Variable Name**: playerHealth, maxAmmoCount, isPlayerAlive
+- **Function Name**: calculateDamage, spawnEnemy, updatePlayerScore
+- **File Name**: playerControllerBlueprint, projectileMesh, enemyAIController
+
+### Variable Usage
+
+Variables in the project are named descriptively to convey their purpose and functionality. We strive to use meaningful and intuitive names that make the code easier to understand and maintain. For example:
+
+- **playerHealth**: The variable representing the player's health is named playerHealth, providing a clear indication of its purpose.
+- **ammoCount**: Variables related to ammunition are named using the convention ammoCount or maxAmmoCount, indicating the current and maximum ammo capacity respectively.
+- **Boolean Flags**: Boolean variables indicating states or conditions are named using descriptive prefixes such as is, has, or should, followed by a noun or adjective. For example, isPlayerAlive, hasKey, shouldRespawnPlayer.
+
+# Reference Variables in Unreal Engine
+
+In Unreal Engine projects, reference variables are commonly used to access and manipulate important classes and components within the game world. These variables provide a convenient way to interact with objects, characters, and systems in the game, facilitating gameplay logic and scripting. Here are some basic reference variables used for important classes in Unreal Engine:
+
+## 1. Player Character Reference: `PlayerCharacterRef`
+
+- **Description:** Reference variable for the player character class, used to access player-specific functionality and properties.
+- **Usage:** Used to control player movement, interactions, and abilities within the game world.
+
+## 2. Game Mode Reference: `GameModeRef`
+
+- **Description:** Reference variable for the game mode class, which defines the rules and logic of the game session.
+- **Usage:** Used to manage game state, handle player spawning, and enforce game rules such as win conditions and match duration.
+
+## 3. Game State Reference: `GameStateRef`
+
+- **Description:** Reference variable for the game state class, which tracks the state of the game session and stores important gameplay data.
+- **Usage:** Used to access information about players, teams, objectives, and other dynamic elements of the game world.
+
+## 4. Player Controller Reference: `PlayerControllerRef`
+
+- **Description:** Reference variable for the player controller class, responsible for handling player input and controlling the camera.
+- **Usage:** Used to capture player input events, control player camera movement, and interact with the game environment.
+
+## 5. HUD Reference: `HUDRef`
+
+- **Description:** Reference variable for the heads-up display (HUD) class, which displays important game information and user interface elements.
+- **Usage:** Used to update and display player health, ammo count, minimap, and other HUD elements during gameplay.
+
+## 6. Game Instance Reference: `GameInstanceRef`
+
+- **Description:** Reference variable for the game instance class, which persists across level transitions and stores global game state data.
+- **Usage:** Used to manage persistent data such as player progress, settings, and game configurations.
+
+## 7. Level Blueprint Reference: `LevelBlueprintRef`
+
+- **Description:** Reference variable for the level blueprint class, which contains level-specific scripting and event handling logic.
+- **Usage:** Used to execute level-specific scripts, trigger events, and control gameplay elements unique to a particular level.
+
+## 8. AI Controller Reference: `AIControllerRef`
+
+- **Description:** Reference variable for the AI controller class, responsible for controlling non-player characters (NPCs) and managing their behavior.
+- **Usage:** Used to control NPC movement, navigation, and decision-making processes within the game world.
+
+These reference variables serve as essential tools for game developers to create dynamic and engaging gameplay experiences in Unreal Engine projects.
+
+
+By adhering to these file structure, naming conventions, and variable usage guidelines, we ensure that the PUBG PC Clone project maintains a clean, organized, and easily understandable codebase, facilitating collaboration and development efficiency.
