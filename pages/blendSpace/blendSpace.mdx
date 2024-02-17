@@ -1,0 +1,77 @@
+---
+title: Blendspaces in Unreal Engine
+---
+
+# Blendspaces in Unreal Engine
+
+Blendspaces are a powerful feature in Unreal Engine used for blending between multiple animations based on input parameters. They are commonly used for smooth transitions between different character movements, such as walking, running, and crouching. In this guide, we'll explore blendspaces and their various uses in Unreal Engine.
+
+## Understanding Blendspaces
+
+Blendspaces are essentially a collection of animation sequences arranged in a grid or 2D space. Each animation sequence represents a specific movement or action, and the grid's axes represent input parameters, such as movement speed or direction. By interpolating between these animations based on input parameters, blendspaces create smooth and seamless transitions between different character movements.
+
+##  Blendspaces used in this Project
+
+### 1. bsNormalStand
+
+- **Description**: Blendspace for character movement while standing.
+- **Animations**: Includes animations for walking, running, and other standing movements.
+- **Input Parameters**: Typically includes movement speed and direction as input parameters.
+
+### 2. bsNormalCrouch
+
+- **Description**: Blendspace for character movement while crouching.
+- **Animations**: Includes animations for crouching movements.
+- **Input Parameters**: Similar to bsNormalStand but optimized for crouching animations.
+
+### 3. bsNormalProne
+
+- **Description**: Blendspace for character movement while prone (lying down).
+- **Animations**: Includes animations for prone movements.
+- **Input Parameters**: Similar to bsNormalStand but optimized for prone animations.
+
+### 4. bsGunNormalStand
+
+- **Description**: Blendspace for character movement with a gun while standing.
+- **Animations**: Includes animations for walking, running, and other standing movements while holding a gun.
+- **Input Parameters**: Typically includes movement speed and gun aiming as input parameters.
+
+### 5. bsGunNormalCrouch
+
+- **Description**: Blendspace for character movement with a gun while crouching.
+- **Animations**: Includes animations for crouching movements with a gun.
+- **Input Parameters**: Similar to bsGunNormalStand but optimized for crouching animations.
+
+### 6. bsGunNormalProne
+
+- **Description**: Blendspace for character movement with a gun while prone.
+- **Animations**: Includes animations for prone movements with a gun.
+- **Input Parameters**: Similar to bsGunNormalStand but optimized for prone animations.
+
+### 7. bsGunAimStand
+
+- **Description**: Blendspace for character aiming with a gun while standing.
+- **Animations**: Includes animations for aiming while standing.
+- **Input Parameters**: Typically includes aim direction and gun aiming as input parameters.
+
+### 8. bsGunAimCrouch
+
+- **Description**: Blendspace for character aiming with a gun while crouching.
+- **Animations**: Includes animations for aiming while crouching.
+- **Input Parameters**: Similar to bsGunAimStand but optimized for crouching animations.
+
+### 9. bsGunAimProne
+
+- **Description**: Blendspace for character aiming with a gun while prone.
+- **Animations**: Includes animations for aiming while prone.
+- **Input Parameters**: Similar to bsGunAimStand but optimized for prone animations.
+
+### 10. bsParachute
+
+- **Description**: Blendspace for character movement while using a parachute (in air).
+- **Animations**: Includes animations for parachute movements.
+- **Input Parameters**: Typically includes parachute descent speed and direction as input parameters.
+
+## Conclusion
+
+Blendspaces are an essential tool for creating realistic character animations and smooth transitions between different movements in Unreal Engine. By understanding and utilizing blendspaces effectively, developers can create immersive and dynamic gameplay experiences.
